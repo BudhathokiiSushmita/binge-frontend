@@ -1,79 +1,76 @@
-# Getting Started with Create React App
+# Binge Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React frontend for **Binge**, an OTT (streaming platform) clone. Users can browse movies and TV shows, view details, search, and sign up or log in.
 
-## Available Scripts
+Backend repository: [binge-backend](https://github.com/BudhathokiiSushmita/binge-backend)
 
-In the project directory, you can run:
+Live demo: _coming soon_
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Home page with a hero carousel, featured movies and featured TV shows
+- Movies and TV Shows pages
+- Details page for each title
+- Content search
+- User signup, login and dashboard
+- Responsive layout built with React Bootstrap
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+- React 18 (Create React App)
+- React Router 6
+- React Bootstrap and Bootstrap 5
+- React Icons
+- React Modal
+- Fetch API for REST calls to the Spring Boot backend
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Structure
 
-### `npm run build`
+```
+src/
+├── component/
+│   ├── Common/        Reusable carousel and grid components
+│   └── pages/         Home, movies, TV shows, details, login, signup, dashboard
+├── service/           API calls (ContentService.js, UserService.js)
+├── images/            Static images
+└── index.js
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js 18 or newer
+- The [Binge backend](https://github.com/BudhathokiiSushmita/binge-backend) running, locally or deployed
 
-### `npm run eject`
+### Install and run
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm install
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The app opens at `http://localhost:3000`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Connect to the backend
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The backend address is set as `API_URL` at the top of two files:
 
-## Learn More
+- `src/service/ContentService.js`
+- `src/service/UserService.js`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To use a backend running on your computer, set them to `http://localhost:8080/content` and `http://localhost:8080/user`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Build for production
 
-### Code Splitting
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Deployment
 
-### Analyzing the Bundle Size
+The frontend is designed to be deployed on [Vercel](https://vercel.com).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Author
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-
-### TODO
-1. Json data, image
-2. Responsive done
-3. Signup and login interactive
-4. Deploy
-5. Video
-
+Sushmita Budhathoki
