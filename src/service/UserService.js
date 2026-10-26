@@ -1,4 +1,5 @@
-const API_URL = 'https://binge-backend-rg01.onrender.com/user';
+const BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8080';
+const API_URL = `${BASE_URL}/user`;
 
 export const registerUser = async (formData) => {
   const response = await fetch(`${API_URL}`, {
