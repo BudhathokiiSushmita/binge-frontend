@@ -4,7 +4,7 @@ React frontend for **Binge**, an OTT (streaming platform) clone. Users can brows
 
 Backend repository: [binge-backend](https://github.com/BudhathokiiSushmita/binge-backend)
 
-Live demo: _coming soon_
+Live demo: [binge-frontend-kappa.vercel.app](https://binge-frontend-kappa.vercel.app). The backend runs on a free Render instance, so the first load after a period of inactivity can take about a minute.
 
 ## Features
 
@@ -51,25 +51,6 @@ npm start
 ```
 
 The app opens at `http://localhost:3000`.
-
-### Connect to the backend
-
-The backend address is set as `API_URL` at the top of two files:
-
-- `src/service/ContentService.js`
-- `src/service/UserService.js`
-
-To use a backend running on your computer, set them to `http://localhost:8080/content` and `http://localhost:8080/user`.
-
-### Build for production
-
-```bash
-npm run build
-```
-
-## Deployment
-
-The frontend is designed to be deployed on [Vercel](https://vercel.com).
 
 ## Author
 
